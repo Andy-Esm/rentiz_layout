@@ -1,0 +1,120 @@
+.products {
+	padding: clamp(3.75rem, 1.932rem + 9.09vw, 10rem) 0;
+	background-color: #1a242f;
+	background-image: url('./products-bg.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.swiper {
+	overflow: hidden;
+}
+.swiper-wrapper {
+	display: inline-flex;
+}
+
+.products__slider {
+	position: relative;
+	margin-block-end: 4.25rem;
+}
+
+.products-slide {
+	display: flex;
+	flex-direction: column;
+	gap: 27px;
+	max-width: 460px;
+	@media (max-width: 660px) {
+		text-align: center;
+	}
+}
+.products-slide__labels {
+	display: flex;
+	align-items: center;
+	gap: var(--gap-md);
+
+	@media (max-width: 660px) {
+		justify-content: center;
+	}
+}
+.products-slide__label {
+	display: flex;
+	gap: var(--gap-sm);
+
+	@media (max-width: 440px) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+.products-slide__text-title {
+	font-weight: 600;
+	font-size: var(--fs-lg);
+	line-height: 1.26;
+	letter-spacing: 0.01em;
+	text-transform: capitalize;
+	color: var(--text-clr-secondary);
+	margin: 0 0 var(--gap-sm);
+}
+
+.slider__btns {
+	position: absolute;
+	top: 30%;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+	@media (max-width: 1700px) {
+		top: -100px;
+		right: 0;
+		width: auto;
+		gap: var(--gap-md);
+	}
+}
+
+.swiper-button-prev {
+	position: absolute;
+	left: -130px;
+}
+.swiper-button-next {
+	position: absolute;
+	right: -130px;
+	transform: rotate(180deg);
+}
+
+.product-slider__btn {
+	width: 78px;
+	height: 78px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	background: url('./arrow.svg') center center no-repeat;
+	cursor: pointer;
+
+	@media (max-width: 1700px) {
+		position: static;
+	}
+	@media (max-width: 660px) {
+		display: none;
+	}
+}
+
+.products-link {
+	text-align: center;
+}
+
+.products-link__item {
+	display: inline-block;
+	padding: 1.375rem 2.625rem;
+	font-weight: 500;
+	font-size: var(--fs-lg);
+	text-transform: capitalize;
+	color: var(--text-clr-secondary);
+	background-color: var(--accent-clr);
+	margin-inline: auto;
+	text-decoration: none;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #15786c;
+		}
+	}
+}

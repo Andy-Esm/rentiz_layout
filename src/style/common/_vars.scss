@@ -1,0 +1,21 @@
+:root {
+	//colors
+	--accent-clr: #1aa090;
+	--text-clr-main: #d6d6d6;
+	--text-clr-secondary: #fff;
+	--bg-clr: #121b25;
+
+	//gap
+	--gap-sm: 0.6875rem;
+	--gap-md: 1.25rem;
+	--gap-lg: 2rem;
+	--gap-xl: 2.5rem;
+
+	//font-size
+	--fs-sm: 1rem;
+	--fs-md: 1.125rem;
+	--fs-lg: 1.625rem;
+	--fs-xl: 2rem;
+	--fs-xxl: 2.5rem;
+	--fs-title: clamp(2.5rem, 1.991rem + 2.55vw, 4.25rem);
+}

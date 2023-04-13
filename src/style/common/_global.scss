@@ -1,0 +1,35 @@
+body {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: var(--fs-md);
+	background-color: var(--bg-clr);
+	color: var(--text-clr-main);
+
+	&._lock {
+		overflow: hidden;
+	}
+}
+
+.main {
+	min-height: 100vh;
+}
+
+[class*='__container'] {
+	max-width: 1452px;
+	margin: 0 auto;
+	padding: 0 var(--gap-sm);
+}
+
+.text {
+	font-size: var(--fs-md);
+	line-height: 1.7;
+}
+
+.title {
+	font-weight: 600;
+	font-size: clamp(1.75rem, 1.386rem + 1.82vw, 3rem);
+	line-height: 1.26;
+	text-transform: capitalize;
+	color: var(--text-clr-secondary);
+	margin-bottom: clamp(1.563rem, 1.072rem + 2.45vw, 3.25rem);
+}
